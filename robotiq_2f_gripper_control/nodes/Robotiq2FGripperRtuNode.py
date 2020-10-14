@@ -57,8 +57,9 @@ def mainLoop(device):
     gripper.client = robotiq_modbus_rtu.comModbusRtu.communication()
 
     #We connect to the address received as an argument
+    print("FFFFFFFFFFFFFFFFFFFF")
     gripper.client.connectToDevice(device)
-
+    print("AAAAAAAAAAAAAAAAAAAAAAAA")
     rospy.init_node('robotiq2FGripper')
 
     #The Gripper status is published on the topic named 'Robotiq2FGripperRobotInput'
